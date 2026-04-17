@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class Api {
-  protected readonly URL: string = "http://localhost:5294/api"
+  protected readonly URL: string = "http://10.234.195.227:5294/api"
   constructor( protected client: HttpClient ){}
   protected headers: HttpHeaders = new HttpHeaders({
     "Authorization": sessionStorage.getItem('token')!

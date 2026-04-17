@@ -1,0 +1,16 @@
+<div class="modal-bg" (click)="toggleClose()"></div>
+<div class="modal-container">
+
+    <div class="modal-content">
+      <label for="">Número</label>
+      <app-input [Placeholder]="'número'"></app-input>
+
+      <label for="">Nome</label>
+      <app-input [Placeholder]="'nome'"></app-input>
+    </div>
+
+    <div class="modal-footer">
+      <app-button (click)="toggleClose()" [Title]="'Fechar'"></app-button>
+      <app-button (click)="toggleSave()" [Title]="'Salvar'"></app-button>
+    </div>
+</div>

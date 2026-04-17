@@ -1,13 +1,24 @@
 <app-header></app-header>
-<section class="chat">
-  <app-chat-message
-    class="received"
-    [Sended]="true"
-    [Content]="'lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores'">
-  </app-chat-message>
-  <app-chat-message
-    class="sended"
-    [Sended]="true"
-    [Content]="'lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores'">
-  </app-chat-message>
+<section class="all">
+  <section class="chat">
+    <!-- Mensagens renderizadas na mão para exemplificar... por algum motivo as classes não funcionaram -->
+    <app-chat-message
+      class="received"
+      [Sended]="true"
+      [Content]="'lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores'">
+    </app-chat-message>
+    <app-chat-message
+      class="sended"
+      [Sended]="true"
+      [Content]="'lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores'">
+    </app-chat-message>
+
+    <!-- O correto era fazer um for aqui também com o get mensagens by id do usuário especifico, mas não deu tempo -->
+  </section>
+
+  <section class="sending">
+    <app-input class="message-input" [Placeholder]="'Digite sua mensagem...'"></app-input>
+    <app-button [Title]="'enviar'"></app-button>
+  </section>
+
 </section>

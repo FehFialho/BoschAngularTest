@@ -4,6 +4,14 @@
 
 <section class="contacts">
   <!-- Fazer For com o Get de Contatos -->
+  <!-- @for (contact of contacts; track $index) {
+    <div>
+      <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="user-profile-photo">
+      <h3>{{contact.username}}</h3>
+      <p>{{contact.phone}}</p>
+    </div>
+  } -->
+
   <div>
     <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="user-profile-photo">
     <h3>Dummy</h3>
@@ -23,3 +31,6 @@
   </div>
 
 </section>
+
+<app-new-contact-modal></app-new-contact-modal>
+<app-button [Title]="'Adicionar Contato'" (onClick)="openModal()"></app-button>
