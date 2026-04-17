@@ -11,11 +11,12 @@ header {
 
 h1 {
   color: aliceblue;
+  font-size: 1.6rem;
 }
 
 header .links {
   display: flex;
-  gap: 1rem;
+  gap: .2rem;
 }
 
 header .links a {

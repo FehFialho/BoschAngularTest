@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Button } from '../../../shared/button/button';
-import { MyInput } from '../../../shared/input/input';
 
 @Component({
   selector: 'app-login-page',
-  imports: [ReactiveFormsModule, Button, MyInput],
+  imports: [ReactiveFormsModule, Button],
   templateUrl: './login-page.html',
   styleUrl: './login-page.css',
 })
