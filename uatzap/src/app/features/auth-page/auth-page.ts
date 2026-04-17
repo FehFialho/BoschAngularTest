@@ -9,5 +9,5 @@ import { RegisterPage } from './register-page/register-page';
   styleUrl: './auth-page.css',
 })
 export class AuthPage {
-  protected isSubscribe: boolean = false;
+  protected isSubscribe: boolean = true;
 }
