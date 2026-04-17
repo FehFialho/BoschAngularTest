@@ -1,0 +1,10 @@
+.chat{
+  background-color: rgb(78, 82, 77);
+  height: 100vh;
+  width: 100wh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+}

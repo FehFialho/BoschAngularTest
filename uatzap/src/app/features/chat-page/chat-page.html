@@ -1,1 +1,13 @@
-<p>chat-page works!</p>
+<app-header></app-header>
+<section class="chat">
+  <app-chat-message
+    class="received"
+    [Sended]="true"
+    [Content]="'lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores'">
+  </app-chat-message>
+  <app-chat-message
+    class="sended"
+    [Sended]="true"
+    [Content]="'lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores lorem epsum dolores'">
+  </app-chat-message>
+</section>
