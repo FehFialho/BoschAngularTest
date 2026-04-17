@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   templateUrl: './button.html',
   styleUrl: './button.css',
 })
-export class Button {}
+export class Button {
+  @Input()
+  Title: string = ""
+  @Output()
+  onClick: EventEmitter<void> = new EventEmitter();
+
+  toggleClick = () => {
+    this.onClick.emit();
+    console.log('Button Clicked!');
+  }
+}
