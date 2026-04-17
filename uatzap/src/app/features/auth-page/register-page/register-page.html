@@ -1,1 +1,20 @@
-<p>register-page works!</p>
+<form action="get" [formGroup]="registerForm" (ngSubmit)="formAction()">
+
+    <label for="">Username</label>
+    <input type="text" formControlName="username">
+    <!-- <app-input type="text" formControlName="username"></app-input> -->
+
+    <label for="">Email</label>
+    <input type="password" formControlName="email">
+
+    <label for="">Nascimento</label>
+    <input type="password" formControlName="birthdate">
+
+    <label for="">Telefone</label>
+    <input type="password" formControlName="number">
+
+    <label for="">Password</label>
+    <input type="password" formControlName="password">
+
+    <app-button type="submit" [Title]="'Register'"></app-button>
+</form>

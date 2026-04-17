@@ -1,1 +1,8 @@
-<p>login-page works!</p>
+<form action="get" [formGroup]="loginForm" (ngSubmit)="formAction()">
+    <label for="">Email</label>
+    <input type="text" formControlName="email">
+    <!-- <app-input type="text" formControlName="username"></app-input> -->
+    <label for="">Password</label>
+    <input type="password" formControlName="password">
+    <app-button type="submit" [Title]="'Logar'"></app-button>
+</form>

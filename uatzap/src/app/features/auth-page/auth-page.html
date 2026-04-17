@@ -1,1 +1,7 @@
-<p>auth-page works!</p>
+<section>
+  @if (isSubscribe) {
+    <app-login-page></app-login-page>
+  }@else {
+    <app-register-page></app-register-page>
+  }
+</section>
